@@ -4,30 +4,27 @@ namespace CSharp
 {
     class Program
     {
-        // 여기에 주석을 달 수 있어요
-        /* 여기세 주석을 달 수 있어요 */
         static void Main(string[] args)
         {
+            // 1. 바구니 크기가 다른경우!
+            int a = 0xFFFFFFF;
+            short b = (short)a;
+
+            // 2. 바구니 크기는 같긴 한데 , 부호가 다를 경우
+            byte c = 255;
+            sbyte sb = (sbyte)c;
+            //underflow (언더플로우) overflow(오버플로우)
+            //0xFF = 0b11111111 = -1
+
+            // 3. 소수
+            float f = 3.1414f;
+            double d = f;
+
+
             // byte(1바이트 0~255), short(2바이트-3만~3만), int(4바이트 -21억~21억), long(8바이트)
             // sbyte(-128~127), ushort(0~6만), uint(0~43억), ulong
 
-            // 1바이트 ( 참/거짓 )
-            bool b;            
-            b = true;
-            b = false;
-
-            // 소수
-            // 4바이트
-            float f = 3.14f;
-
-            // 8바이트 
-            double d = 3.14;
-
-            // 2바이트
-            char c = '글';
-            string str = "Hello World";
-
-            Console.WriteLine(str);
+           
 
             //Console.WriteLine("Hello Number ! {0}", hp);
         }

@@ -38,3 +38,4 @@ double d = 3.14;
 char c = '글';
 string str = "Hello World";
 
+#형식 변환
