@@ -22,6 +22,7 @@ sbyte(-128~127), ushort(0~6만), uint(0~43억), ulong()
 0x10
 
 #불리언, 소수, 문자, 문자열 형식
+
 1바이트 ( 참/거짓 )
 bool b;            
 b = true;
@@ -38,4 +39,24 @@ double d = 3.14;
 char c = '글';
 string str = "Hello World";
 
-#형식 변환
+#데이터 연산
+
+++ / -- 의 순서
+hp++;
+hp--;
+
+++hp;
+--hp;
+
+< <= >= > == !=
+bool b = hp == 100;
+hp 값이 100과 일치?
+
+bool b = hp != 100;
+hp 값이 100과 다른가?
+
+&& AND
+|| OR
+! NOT
+
+
