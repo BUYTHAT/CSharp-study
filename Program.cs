@@ -7,42 +7,47 @@ namespace CSharp
         static void Main(string[] args)
         {
 
-            /*int choice = 1; // 0:가위 1:바위 2:보 3:치트키
+            // 0: 가위  1: 바위  2: 보
+            
+            Random rand = new Random();
+            int aiChoice = rand.Next(0, 3); // 0~2 사이의 랜덤값
+
+            int choice = Convert.ToInt32(Console.ReadLine());
 
             switch (choice)
             {
                 case 0:
-                    Console.WriteLine("가위입니다.");
+                    Console.WriteLine("당신의 선택은 가위입니다.");
                     break;
                 case 1:
-                    Console.WriteLine("바위입니다.");
+                    Console.WriteLine("당신의 선택은 바위입니다.");
                     break;
                 case 2:
-                    Console.WriteLine("보입니다.");
+                    Console.WriteLine("당신의 선택은 보입니다.");
                     break;
-                case 3:
-                    Console.WriteLine("치트키입니다.");
+            }
+
+            switch (aiChoice)
+            {
+                case 0:
+                    Console.WriteLine("컴퓨터의 선택은 가위입니다.");
                     break;
-                default:
-                    Console.WriteLine("다 실패 했습니다.");
+                case 1:
+                    Console.WriteLine("컴퓨터의 선택은 바위입니다.");
                     break;
-            }*/
+                case 2:
+                    Console.WriteLine("컴퓨터의 선택은 보입니다.");
+                    break;
+            }
 
+            // 승리 무승부 패배
 
-            // 삼항연산자
-
-            int number = 25;
-
-            //bool isPair = (조건 ? 맞을때 : 틀릴때);
-            bool isPair = ((number & 2) == 0 ? true : false);
-
-            if( (number & 2) == 0 )
-                isPair = true;
-            else
-                isPair = false;
-
-            
-
+            if ((choice == 0 && aiChoice == 2) || (choice == 1 && aiChoice == 0) || (choice == 2 && aiChoice == 1))
+                Console.WriteLine("승리");
+            else if (choice == aiChoice)
+                Console.WriteLine("무승부");
+            else if ((choice == 0 && aiChoice == 1) || (choice == 1 && aiChoice == 2) || (choice == 2 && aiChoice == 0))
+                Console.WriteLine("패배");
 
         }
     }
