@@ -12,6 +12,7 @@ if (참 또는 거짓의 조건문)
 
 # switch
 
+```
 switch (choice)
 {
     case 0:
@@ -30,8 +31,41 @@ switch (choice)
         Console.WriteLine("다 실패 했습니다.");
         break;
 }
+```
 
 삼항연산자
 
 bool isPair = ( 조건 ? 맞을때 : 틀릴때 );
 ex)bool isPair = ((number & 2) == 0 ? true : false);
+
+# 상수와 열거형
+
+const int  =  상수
+switch 에서 변수로 쓰려면 변하지 않는 상수값 이어야 함.
+
+```
+const int SCISSORS = 0;
+const int ROCK = 1;
+const int PAPAER = 2;
+```
+
+열거형
+
+```
+enum Choice
+{
+    Rock = 1,
+    Paper = 2,
+    Scissors = 0
+}
+```
+
+정수타입이 아닌 enum 값이기 때문에
+int로 변환
+
+```
+(int)Choice.Scissors
+```
+
+
+
