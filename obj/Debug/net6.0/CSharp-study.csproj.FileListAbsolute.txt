@@ -1,0 +1,15 @@
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\bin\Debug\net6.0\CSharp-study.exe
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\bin\Debug\net6.0\CSharp-study.deps.json
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\bin\Debug\net6.0\CSharp-study.runtimeconfig.json
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\bin\Debug\net6.0\CSharp-study.dll
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\bin\Debug\net6.0\CSharp-study.pdb
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.csproj.AssemblyReference.cache
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.AssemblyInfoInputs.cache
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.AssemblyInfo.cs
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.csproj.CoreCompileInputs.cache
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.dll
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\refint\CSharp-study.dll
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.pdb
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\CSharp-study.genruntimeconfig.cache
+C:\Users\LeeMyeongHyeon\Desktop\CSharp\CSharp-study\CSharp-study\obj\Debug\net6.0\ref\CSharp-study.dll
