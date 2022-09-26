@@ -20,3 +20,21 @@ sbyte(-128~127), ushort(0~6만), uint(0~43억), ulong()
 0~9 a b c d e f
 0x00 0x01 0x02 0x03 . . 0x0f
 0x10
+
+#불리언, 소수, 문자, 문자열 형식
+1바이트 ( 참/거짓 )
+bool b;            
+b = true;
+b = false;
+
+소수
+4바이트
+float f = 3.14f;
+
+8바이트 
+double d = 3.14;
+
+2바이트
+char c = '글';
+string str = "Hello World";
+
