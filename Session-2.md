@@ -35,7 +35,7 @@ switch (choice)
 }
 ```
 
-##삼항연산자
+## 삼항연산자
 
 bool isPair = ( 조건 ? 맞을때 : 틀릴때 );
 ex)bool isPair = ((number & 2) == 0 ? true : false);
@@ -51,7 +51,7 @@ const int ROCK = 1;
 const int PAPAER = 2;
 ```
 
-##열거형
+## 열거형
 
 ```
 enum Choice
@@ -80,7 +80,7 @@ while ( 조건 )
 }
 ```
 
-##do while 문
+## do while 문
 
 do 안에있는 명령 먼저 실행,
 while 조건에 의해 반복실행
@@ -93,7 +93,7 @@ do
 ```
 
 
-#for
+# for
 
 ```
 for (초기화식; 조건식; 반복식)
@@ -102,5 +102,36 @@ for (초기화식; 조건식; 반복식)
 }
 ```
 
+#  break, continue
 
+break는 반복문을 중단시킴
+불필요한 계산 최소화
 
+```
+for (int i = 2; i < num; i++)
+{
+    if ((num % i) == 0)
+    {
+        isPrime = false;
+        break;
+    }
+}
+```
+
+## continue
+
+continue; 계속 진행
+불필요한 계산 최소화
+
+```
+for (int i = 1; i <= 100; i++)
+{
+    if ((i % 3) != 0)
+    {
+        continue;
+    }
+    Console.WriteLine("3의 배수 발견! : {0}", i);
+}
+```
+
+# 
