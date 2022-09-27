@@ -6,17 +6,12 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            // 거울아 거울아
-
-            string answer;
-
-            do
+            for (int i = 0; i < 5; i++ )
             {
-                Console.WriteLine("강사님은 잘생기셨나요? (y/n) : ");
-                answer = Console.ReadLine();
-            } while ( answer != "y" );
+                Console.WriteLine("Hello World!");
+            }
 
-            Console.WriteLine("정답입니다!");
+
         }
     }
 }
