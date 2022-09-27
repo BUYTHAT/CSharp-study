@@ -86,7 +86,7 @@ namespace CSharp
                 if (choice != ClassType.None)
                 {
 
-                    Player player;
+                    Player player;   //구조체 변수 선언
                    
 
                     CreatePlayer(choice, out player);
