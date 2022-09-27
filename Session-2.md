@@ -134,4 +134,30 @@ for (int i = 1; i <= 100; i++)
 }
 ```
 
-# 
+# 함수
+
+Method 라고도 불림
+
+```
+class{
+    한정자 반환형식 이름 (매개변수목록)
+    //static void HelloWorld()
+    {
+        Console.WriteLine("HelloWorld");
+    }
+}
+```
+
+### a의 값을 복사해서 넘김
+
+```
+int a = 10;
+Program.AddOne(a);
+```
+
+### a의 변수 자체를 넘김
+
+```
+int a = 10;
+Program.AddOne(ref a);
+```

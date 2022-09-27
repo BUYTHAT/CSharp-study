@@ -1,51 +1,26 @@
 ﻿using System;
+using System.Net.Security;
 
 namespace CSharp
 {
     class Program
     {
+        // 덧셈 함수
+        static void AddOne(ref int number)
+        {
+            number = number + 1; 
+        }
+
         static void Main(string[] args)
         {
 
-            /*int num = 98; //1, 97로만 나뉘는 숫자
+            //복사 (짭) 참조 (찐)
+            int a = 10;
 
-            bool isPrime = true;
-            for (int i = 2; i < num; i++)
-            {
-                if ((num % i) == 0)
-                {
-                    isPrime = false;
-                    break;
-                }
-            }
+            Program.AddOne(ref a); 
 
-            if (isPrime)
-            {
-                Console.WriteLine("소수입니다!");
-            } else {
-                Console.WriteLine("소수가 아닙니다!");
-            }*/
-
-            for (int i = 1; i <= 100; i++)
-            {
-                if ((i % 3) == 0)
-                {
-                    Console.WriteLine("3의 배수 발견! : {0}", i);
-                }
-            }
-
-
-
-            for (int i = 1; i <= 100; i++)
-            {
-                if ((i % 3) != 0)
-                {
-                    continue;
-                }
-                Console.WriteLine("3의 배수 발견! : {0}", i);
-            }
-
-
+            Console.WriteLine(a);
+            
         }
     }
 }
