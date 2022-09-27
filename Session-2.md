@@ -1,5 +1,6 @@
 # if와 else
 
+```
 if (참 또는 거짓의 조건문)
 {
 	*참 일시, 실행*
@@ -9,6 +10,7 @@ if (참 또는 거짓의 조건문)
 } else {
 	*위 조건문에 대하여 참이 아닌경우  실행*
 }
+```
 
 # switch
 
@@ -33,7 +35,7 @@ switch (choice)
 }
 ```
 
-삼항연산자
+##삼항연산자
 
 bool isPair = ( 조건 ? 맞을때 : 틀릴때 );
 ex)bool isPair = ((number & 2) == 0 ? true : false);
@@ -49,7 +51,7 @@ const int ROCK = 1;
 const int PAPAER = 2;
 ```
 
-열거형
+##열거형
 
 ```
 enum Choice
@@ -67,5 +69,25 @@ int로 변환
 (int)Choice.Scissors
 ```
 
+# while
 
+조건을 만족시키는 한 명령문 반복실행
 
+```
+while ( 조건 )
+{
+    명령
+}
+```
+
+##do while 문
+
+do 안에있는 명령 먼저 실행,
+while 조건에 의해 반복실행
+
+```
+do
+{
+
+} while () ;
+```
