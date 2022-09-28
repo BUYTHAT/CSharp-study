@@ -10,7 +10,7 @@ Consol.Write 에서 string 속에 int 변수를 넣고싶을때
 Console.Write($"HP : {hp} / ATTACK : {attack}");
 ```
 
-####ClassType
+### ClassType
 
 `int choice;` 를 하면 'int' 타입의 변수를 할당해서 ''choice'라는 이름으로 코드에서 활용하는데,
 마찬가지로 `ClassType choice;`를 하면 'ClassType' 타입의 변수를 할당하게됨
@@ -31,7 +31,7 @@ C# 코드에선 1, 2, 3 이라는 의미없는 값을 하드코딩해서 넣는 것이 아니라
 ClassType.Knight와 같이 우리가 알아보기 쉬운 값을 사용할 수 있게 됨
 
 
-#### 구조체, struct
+### 구조체, struct
 
 ```
 struct Player  // 구조체 정의
@@ -48,4 +48,6 @@ p1.hp = 100;       //p1.으로 구조체 멤버에 접근하여 값 할당
 p1.level = 300;
 ```
 
+#### Console.ReadLine
 
+Console.ReadLine을 통해 읽게되면 무조건 string 형식
