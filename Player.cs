@@ -14,32 +14,33 @@ namespace CSharp_study
          Mage = 3
     }
 
-    class Player
+    public enum Gender
     {
-        protected PlayerType type = PlayerType.None;
-        protected int hp;
-        protected int attack;
+        Unknown,
+        Man,
+        Woman
+    }
 
-        protected Player(PlayerType type)
+    class Player : Creature
+    {
+        
+        protected PlayerType type = PlayerType.None;
+        Gender gender = Gender.Unknown;
+        
+
+        protected Player(PlayerType type) : base(CreatureType.Player)
         {
             this.type = type;
         }
 
-        public void SetInfo(int hp, int attack)
-        {
-            this.hp = hp;
-            this.attack = attack;
-        }
-
-        public int GetHp() { return hp; }
-        public int GetAttack() { return attack;  }
+        public PlayerType GetPlayerType() { return type; }
     }
 
     class Knight : Player
     {
         public Knight() : base(PlayerType.Knight)
         {
-            SetInfo(100,10);
+            SetInfo(100, 10, 100);
         }
     }
                         
@@ -47,7 +48,7 @@ namespace CSharp_study
     {
         public Archer() : base(PlayerType.Archer)
         {
-            SetInfo(75, 12);
+            SetInfo(75, 12, 75);
         }
     }
 
@@ -55,7 +56,7 @@ namespace CSharp_study
     {
         public Mage() : base(PlayerType.Mage)
         {
-            SetInfo(50, 15);
+            SetInfo(50, 15, 50);
         }
     }
 }
