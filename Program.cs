@@ -4,30 +4,78 @@ namespace CSharp
 {
     class Program
     {
-        static void Main(string[] agrs)
+        static int GetHighestScore(int[] scores)
         {
-            //배열
-            int[] scores = new int[5] { 10, 20, 30, 40, 50 };
-            int[] scores2 = scores;
-
-            scores2[0] = 9999;
-
-            // 0 1 2 3 4
-            /*scores[0] = 10;
-            scores[1] = 20;
-            scores[2] = 30;
-            scores[3] = 40;
-            scores[4] = 50;*/
-
-            for (int i = 0; i < scores.Length; i++)
-            {
-                Console.WriteLine(scores[i]);
-            }
-
+            int maxValue = 0;
             foreach (int score in scores)
             {
-                Console.WriteLine(score);
+                if (score > maxValue)
+                {  
+                    maxValue = score;
+                }
             }
+            return maxValue;
+        }
+
+        static int GetAverageScore(int[] scores)
+        {
+            int averageValue = 0;
+            foreach (int score in scores)
+            {
+                averageValue += score;
+            }
+            averageValue/=scores.Length;
+            return averageValue;
+        }
+
+        static int GetindexOf(int[] scores, int value)
+        {
+            
+            for (int i = 0; i < scores.Length; i++)
+            {
+                if (scores[i] == value)
+                {
+                    return i;
+                } 
+            }
+            return -1;
+        }
+
+        static void sort(int[] scores)
+        {
+            int lowestScore = 0;
+            int[] sortedScores = new int[scores.Length];
+            for (int j = 0; j < scores.Length; j++)
+            {
+                lowestScore = scores[j];
+
+                for (int i = 0; i < scores.Length; i++)
+                {
+                    if (lowestScore > scores[i])
+                    {
+                        lowestScore = scores[i];
+                        break;
+                    }
+
+                    scores[j] = lowestScore;
+                }
+            }
+        }
+        static void Main(string[] agrs)
+        {
+            
+            int[] scores = new int[5] { 10, 30, 40, 20, 50 };
+
+            int highestScore = GetHighestScore(scores);
+            Console.WriteLine(highestScore) ;
+
+            int averageScore = GetAverageScore(scores);
+            Console.WriteLine(averageScore);
+
+            int indexOf = GetindexOf(scores, 50);
+            Console.WriteLine(indexOf);
+
+            sort(scores);
         }
     }
 }
