@@ -2,33 +2,32 @@
 
 namespace CSharp
 {
+    class Monster
+    {
+        public int id;
+        public Monster(int id)
+        {
+            this.id = id;
+        }
+        
+    }
+
     class Program
     {
         static void Main(string[] agrs)
         {
-            int[] arr = new int[10];
-
-            //list <- 동적 배열 [ 0, 1, 2, 3, 4 ] 
             List<int> list = new List<int>();
-            for (int i = 0; i < 5; i++)
-            {
-                list.Add(i);
-            }
 
-            //삽입 삭제
-            list.Insert(2, 999);
 
-            bool success =  list.Remove(2);
+            Dictionary<int, Monster> dic = new Dictionary<int, Monster>();
 
-            list.RemoveAt(0);
-            list.Clear();
+            dic.Add(1, new Monster(1));
+            dic[5] = new Monster(5);
 
-            for (int i = 0; i < list.Count; i++)
-                Console.WriteLine(list[i]) ;
+            for (int i = 0; i < 10000; i++)
+                dic.Add(i, new Monster(i));
 
-            foreach (int num in list)
-                Console.WriteLine(num);
-
+            Monster mon = dic[7777];
         }
     }
 }
